@@ -1,4 +1,4 @@
-from functools import lru_cache
+a="""from functools import lru_cache
 from time import perf_counter
 
 
@@ -10,7 +10,7 @@ def fib(num: int) -> int:
         return 1
     return fib(num-1) + fib(num-2)
 
-
+ 
 try:
     number = int(input('Enter a number : '))
 
@@ -22,7 +22,9 @@ try:
     end = perf_counter()
     print(f'Fibonacci series for given number {number} is : {fib_series}')
     print(f'Time taken : {(end-start) * 1000: .2f}ms')
-    print(fib.cache_info())
+    print(fib.cache_info()) """
+
+ exec(a)
 
 except ValueError as ve:
 
