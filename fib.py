@@ -22,10 +22,10 @@ try:
     end = perf_counter()
     print(f'Fibonacci series for given number {number} is : {fib_series}')
     print(f'Time taken : {(end-start) * 1000: .2f}ms')
-    print(fib.cache_info()) """
-
- exec(a)
+    print(fib.cache_info()) 
 
 except ValueError as ve:
 
     print('fibonacci series for negative numbers does not exist')
+"""
+exec(a)
